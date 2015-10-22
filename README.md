@@ -26,10 +26,6 @@ GNU General Public License v3.0 [Read more about our license.](http://www.gnu.or
 
 [PhoneGap](http://phonegap.com/) by Adobe. Licensed under [Apache](https://github.com/phonegap/phonegap-start/blob/master/LICENSE)
 
-### Randomuser
-
-[Randomuser](https://randomuser.me/) by Randomapi. Licensed under [CC-BY 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
 ## Misc
 
 Follow Mickael Guillaume: [Twitter](https://twitter.com/guillaumemick), [Behance](https://www.behance.net/mickaeldll)
