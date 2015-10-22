@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Lucio</title>
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.css">
+    <link rel="stylesheet" href="css/default-style.css">
+    <link rel="stylesheet" href="css/my-app.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/icon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/icon.png">
+</head>
+
+<body>
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-cover">
+        <div class="list-block">
+            <ul class="menu">
+                <li>
+                    <a href="index.html" class="item-link item-content">
+                        <div class="item-media"><i class="material-icons menu">explore</i></div>
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Explore</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="item-link item-content">
+                        <div class="item-media"><i class="material-icons menu">shopping_cart</i></div>
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Cart</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="item-link item-content">
+                        <div class="item-media"><i class="material-icons menu">settings</i></div>
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Settings</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="item-link item-content">
+                        <div class="item-media"><i class="material-icons menu">power_settings_new</i></div>
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Sign out</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages navbar-fixed">
+                <div data-page="index" class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left"><a href="#" class="open-panel link icon-only"><i class="material-icons">menu</i></a></div>
+                            <div class="center">Explore</div>
+                            <div class="right"><a href="cart.html" class="link icon-only"><i class="material-icons">shopping_cart</i></a></div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+
+                        <div class="card ks-card-header-pic">
+                            <a href="product-detail.html" style="background-image:url(img/product.jpg);width: 70%;margin: 0 auto;" valign="bottom" class="card-header color-white no-border"></a>
+                            <div class="card-footer">
+                                <div class="product-name">Product Name</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="product-price">1 230€</div><a href="#" class="button button-raised">+ Add</a>
+                            </div>
+                        </div>
+
+                        <div class="card ks-card-header-pic">
+                            <a href="product-detail2.html" style="background-image:url(img/product2.jpg);width: 70%;margin: 0 auto;" valign="bottom" class="card-header color-white no-border"></a>
+                            <div class="card-footer">
+                                <div class="product-name">Product Name</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="product-price">490€</div><a href="#" class="button button-raised">+ Add</a>
+                            </div>
+                        </div>
+
+                        <div class="card ks-card-header-pic">
+                            <a href="product-detail3.html" style="background-image:url(img/product3.jpg);width: 50%;margin: 0 auto;" valign="bottom" class="card-header color-white no-border"></a>
+                            <div class="card-footer">
+                                <div class="product-name">Product Name</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="product-price">660€</div><a href="#" class="button button-raised">+ Add</a>
+                            </div>
+                        </div>
+
+                        <div class="card ks-card-header-pic">
+                            <a href="product-detail4.html" style="background-image:url(img/product4.jpg);width: 70%;margin: 0 auto;" valign="bottom" class="card-header color-white no-border"></a>
+                            <div class="card-footer">
+                                <div class="product-name">Product Name</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="product-price">760€</div><a href="#" class="button button-raised">+ Add</a>
+                            </div>
+                        </div>
+
+                        <div class="card ks-card-header-pic">
+                            <a href="product-detail5.html" style="background-image:url(img/product5.jpg);width: 45%;margin: 0 auto;" valign="bottom" class="card-header color-white no-border"></a>
+                            <div class="card-footer">
+                                <div class="product-name">Product Name</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="product-price">1 490€</div><a href="#" class="button button-raised">+ Add</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>

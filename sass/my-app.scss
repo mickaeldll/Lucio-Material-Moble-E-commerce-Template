@@ -1,0 +1,129 @@
+@import "compass";
+
+/*
+===============================================
+
+[Main stylesheet my-app.css]
+
+Author:	        Guillaume Mickael
+Version:	    1.0
+Created:	    20.10.2015
+Last updated:	21.10.2015
+Template:	    Lucio - E-commerce material HTML Mobile and Tablet Template
+
+=================================================
+*/
+
+$color_theme: #55acee;
+$text_color: #607d8b;
+$total_price_color: #8bc34a;
+$menu_background: #469fe2;
+
+p{
+    color: $text_color;
+}
+.page-content{
+    background-color: #f2f2f2;
+}
+.navbar{
+    background-color: $color_theme;
+}
+.card {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 3px 0px rgba(0, 0, 0, 0.24);
+}
+.material-icons{
+    color: white;
+    line-height: 0;
+}
+.material-icons.product-detail{
+    color: $color_theme;
+    line-height: 0;
+}
+.button {
+    color: white;
+    text-transform: none;
+    background-color: $color_theme;
+    border-radius: 15px;
+    height: 30px;
+    width: 70px;
+    font-weight: 500;
+    line-height: 31px;
+}
+.button.larger{
+    width: 100%;
+    margin: 0 auto;
+}
+.product-name,
+.product-price,
+.product-total{
+    color: $text_color;
+    font-weight: 700;
+}
+.product-price.total{
+    color: $total_price_color;
+    font-size: 16px;
+}
+.product-color{
+    color: $text_color;
+    font-weight: 700;
+}
+.color {
+    display: inherit;
+    margin-right: -10px;
+}
+.color-grey{
+    background-color: #d0d0d4;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.color-gold{
+    background-color: #d4bba3;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.color-sideral{
+    background-color: #9b9ba0;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.item-title{
+    font-size: 14px;
+    color: $text_color;
+}
+.label-switch input[type="checkbox"]:checked + .checkbox:after{
+    background: $color_theme!important;
+}
+.list-block input[type="text"], .list-block input[type="password"], .list-block input[type="search"], .list-block input[type="email"], .list-block input[type="tel"], .list-block input[type="url"], .list-block input[type="date"], .list-block input[type="datetime-local"], .list-block input[type="time"], .list-block input[type="number"], .list-block select, .list-block textarea{
+    font-size: 14px;
+    color: $text_color; 
+}
+.page-content.login-screen-content{
+    background-color: white;
+}
+.material-icons.login-logo{
+    color: $color_theme;
+    font-size: 130px;
+}
+.panel{
+    background-color: $menu_background;
+}
+.material-icons.menu{
+    font-size: 20px;
+}
+.item-title.menu{
+    color: white;
+}
+.item-inner.menu{
+    background-image: none!important;
+}
+ul.menu:before,
+ul.menu:after,
+.item-inner.menu:after{
+    display: none;
+}
