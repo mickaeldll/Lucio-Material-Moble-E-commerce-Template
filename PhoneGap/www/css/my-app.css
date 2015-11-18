@@ -6,16 +6,48 @@
 Author:	        Guillaume Mickael
 Version:	    1.0
 Created:	    20.10.2015
-Last updated:	21.10.2015
+Last updated:	18.11.2015
 Template:	    Lucio - E-commerce material HTML Mobile and Tablet Template
 
 =================================================
 */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff) format("woff"), url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.ttf) format("truetype");
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 p {
   color: #607d8b;
 }
 
-.page-content {
+.page-content.home {
   background-color: #f2f2f2;
 }
 
@@ -25,6 +57,29 @@ p {
 
 .card {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+.opacity-container {
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.category-title {
+  padding: 0px 16px;
+  margin: 1em 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-header {
+  max-width: 100%;
+  height: auto;
 }
 
 .material-icons {
@@ -54,15 +109,25 @@ p {
 }
 
 .product-name,
-.product-price,
-.product-total {
+.product-total,
+.item-title.product {
   color: #607d8b;
+  font-weight: 700;
+}
+
+.item-after.product,
+.product-price {
+  color: #8bc34a;
   font-weight: 700;
 }
 
 .product-price.total {
   color: #8bc34a;
   font-size: 16px;
+}
+
+.list-block {
+  margin: 0;
 }
 
 .product-color {
@@ -101,6 +166,7 @@ p {
 
 .item-title {
   font-size: 14px;
+  font-weight: 500;
   color: #607d8b;
 }
 
@@ -123,15 +189,17 @@ p {
 }
 
 .panel {
-  background-color: #469fe2;
+  background-color: white;
 }
 
 .material-icons.menu {
+  color: #607d8b;
   font-size: 20px;
 }
 
 .item-title.menu {
-  color: white;
+  color: #607d8b;
+  font-weight: 500;
 }
 
 .item-inner.menu {
@@ -142,4 +210,8 @@ ul.menu:before,
 ul.menu:after,
 .item-inner.menu:after {
   display: none;
+}
+
+.navbar-fixed .page .login-screen-content {
+  padding-top: 56px;
 }

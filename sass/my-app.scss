@@ -8,7 +8,7 @@
 Author:	        Guillaume Mickael
 Version:	    1.0
 Created:	    20.10.2015
-Last updated:	21.10.2015
+Last updated:	18.11.2015
 Template:	    Lucio - E-commerce material HTML Mobile and Tablet Template
 
 =================================================
@@ -16,8 +16,8 @@ Template:	    Lucio - E-commerce material HTML Mobile and Tablet Template
 
 $color_theme: #55acee;
 $text_color: #607d8b;
-$total_price_color: #8bc34a;
-$menu_background: #469fe2;
+$price_color: #8bc34a;
+$menu_background: white;
 
 @font-face {
 font-family: 'Material Icons';
@@ -60,7 +60,7 @@ font-feature-settings: 'liga';
 p{
     color: $text_color;
 }
-.page-content{
+.page-content.home{
     background-color: #f2f2f2;
 }
 .navbar{
@@ -68,6 +68,26 @@ p{
 }
 .card {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 3px 0px rgba(0, 0, 0, 0.24);
+}
+.opacity-container {
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.category-title {
+    padding: 0px 16px;
+    margin: 1em 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.product-header {
+    max-width: 100%;
+    height: auto;
 }
 .material-icons{
     color: white;
@@ -92,14 +112,22 @@ p{
     margin: 0 auto;
 }
 .product-name,
-.product-price,
-.product-total{
+.product-total,
+.item-title.product{
     color: $text_color;
     font-weight: 700;
 }
+.item-after.product,
+.product-price{
+    color: $price_color;
+    font-weight: 700;
+}
 .product-price.total{
-    color: $total_price_color;
+    color: $price_color;
     font-size: 16px;
+}
+.list-block{
+    margin: 0;
 }
 .product-color{
     color: $text_color;
@@ -132,6 +160,7 @@ p{
 }
 .item-title{
     font-size: 14px;
+    font-weight: 500;
     color: $text_color;
 }
 .label-switch input[type="checkbox"]:checked + .checkbox:after{
@@ -152,10 +181,12 @@ p{
     background-color: $menu_background;
 }
 .material-icons.menu{
+    color: $text_color;
     font-size: 20px;
 }
 .item-title.menu{
-    color: white;
+    color: $text_color;
+    font-weight: 500;
 }
 .item-inner.menu{
     background-image: none!important;
@@ -164,4 +195,7 @@ ul.menu:before,
 ul.menu:after,
 .item-inner.menu:after{
     display: none;
+}
+.navbar-fixed .page .login-screen-content {
+    padding-top: 56px;
 }
