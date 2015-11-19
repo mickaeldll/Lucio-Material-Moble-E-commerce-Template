@@ -1,8 +1,6 @@
 # Lucio Mobile Template
 
-Lucio E-commerce material HTML Mobile and Tablet Template.
-
-[Download on Github](https://github.com/mickaeldll/Platon-Mobile-Template/archive/master.zip)
+Lucio E-commerce material HTML Mobile Template.
 
 [Demo](http://mickaelguillaume.esy.es/Lucio/index.html)
 
